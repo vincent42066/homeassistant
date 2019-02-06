@@ -1,0 +1,35 @@
+# sensor.bordeaux_freeze_chance: {}
+########CUSTOMIZE SENSORS########
+####meteo####
+     sensor.meteo_temperature:
+        icon: mdi:thermometer
+        friendly_name: Outdoor
+     sensor.meteo_wind_speed:
+        icon: mdi:meteo-windy
+        friendly_name: Vent
+     sensor.meteo_weather:
+        friendly_name: Weather
+     sensor.meteo_uv:
+        friendly_name: UV
+     sensor.meteo_next_rain:
+        friendly_name: Prochaine pluie
+     sensor.meteo_freeze_chance:
+        friendly_name: Chance de gele
+     sensor.meteo_rain_chance:
+        friendly_name: Chance de pluie
+     sensor.meteo_snow_chance:
+        friendly_name: chance de neige
+     sensor.meteo_thunder_chance:
+        friendly_name: chance de tonerre
+####ESP MQTT####
+     sensor.mqtt_cpt_temperature:
+        friendly_name: "Capteur Temperature"
+        icon: mdi:thermometer
+     sensor.mqtt_cpt_luminosite:
+        friendly_name: "Capteur Luminosite"
+        icon: mdi:brightness-7
+#######CUSTOMIZE SWITCHES########
+####RF####
+     switch.mqtt_effecteur:
+        friendly_name: Vollets
+        icon: mdi:blinds

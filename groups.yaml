@@ -1,0 +1,46 @@
+default_view:
+ view: true
+ entities:
+   - group.meteo
+   - group.capteur
+   - group.effecteur
+
+lovelace:
+  name: Lovelace
+  view: true
+  entities:
+    - group.capteur
+    - group.effecteur
+
+
+####GROUPS####
+
+####Everything Else####
+#
+capteur:
+  name: Capteur
+  view: false
+  entities:
+   - sensor.mqtt_cpt_temperature
+   - sensor.mqtt_cpt_luminosite
+
+effecteur:
+  name: Effecteur
+  view: false
+  entities:
+   - switch.mqtt_effecteur
+
+meteo:
+  name: Meteo
+  view: false
+  entities:
+   - sensor.meteo_temperature
+   - sensor.meteo_weather
+   - sensor.meteo_wind_speed
+   - sun.sun
+   - sensor.meteo_uv
+   - sensor.meteo_next_rain
+   - sensor.meteo_freeze_chance
+   - sensor.meteo_rain_chance
+   - sensor.meteo_snow_chance
+   - sensor.meteo_thunder_chance
