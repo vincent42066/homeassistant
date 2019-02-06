@@ -1,0 +1,25 @@
+- platform: meteo_france
+  postal_code: '37000'
+  name: "meteo"
+  monitored_conditions:
+    - temperature
+    - weather
+    - wind_speed
+    - uv
+    - next_rain
+    - freeze_chance
+    - rain_chance
+    - snow_chance
+    - thunder_chance
+
+- platform: mqtt
+  state_topic: "home/garden/temperature"
+  name: "MQTT cpt Temperature"
+  unit_of_measurement: '°C'
+  value_template: '{{ value_json.temperature }}'
+
+- platform: mqtt
+  state_topic: "home/lovelace/luminosite"
+  name: "MQTT cpt Luminosite"
+  unit_of_measurement: 'lum'
+  value_template: '{{ value_json.luminosite }}'
