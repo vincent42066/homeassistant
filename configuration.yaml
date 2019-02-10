@@ -2,8 +2,8 @@ homeassistant:
   # Name of the location where Home Assistant is running
   name: Home
   # Location required to calculate the time the sun rises and sets
-  latitude: 47.364526
-  longitude: 0.684582
+  latitude: 47.38
+  longitude: 0.68
   # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation: 0
   # metric for Metric, imperial for Imperial
@@ -56,11 +56,14 @@ map:
 # Track the sun
 sun:
 
+
 weather:
-- platform: openweathermap
-  api_key: f8955080876d6c22df663501aa89bb95
-- type: weather-forecast
-entity: weather.openweathermap
+- platform: darksky
+  name: Tours
+  api_key: 18aca8cb7b41392a525aaacf971ae939
+  mode: daily
+
+
 
 #MQTT
 mqtt:

@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "last_seen": "2019-02-10T21:35:43.197815+00:00",
+            "state": {
+                "attributes": {
+                    "assumed_state": true,
+                    "friendly_name": "Vollets",
+                    "icon": "mdi:blinds"
+                },
+                "context": {
+                    "id": "e349ad51afc145a6867ee33044f63a43",
+                    "user_id": null
+                },
+                "entity_id": "switch.mqtt_effecteur",
+                "last_changed": "2019-02-10T21:35:41.240991+00:00",
+                "last_updated": "2019-02-10T21:35:41.240991+00:00",
+                "state": "off"
+            }
+        }
+    ],
+    "key": "core.restore_state",
+    "version": 1
+}

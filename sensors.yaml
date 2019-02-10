@@ -1,6 +1,6 @@
 - platform: meteo_france
   postal_code: '37000'
-  name: "meteo"
+  name: meteo
   monitored_conditions:
     - temperature
     - weather
@@ -11,6 +11,38 @@
     - rain_chance
     - snow_chance
     - thunder_chance
+
+- platform: darksky
+  api_key: 18aca8cb7b41392a525aaacf971ae939
+  name: DarkSky
+  monitored_conditions:
+    - summary
+    - icon
+    - precip_type
+    - precip_intensity
+    - precip_probability
+    - precip_accumulation
+    - temperature
+    - apparent_temperature
+    - dew_point
+    - wind_speed
+    - wind_gust
+    - wind_bearing
+    - cloud_cover
+    - humidity
+    - pressure
+    - visibility
+    - ozone
+    - temperature_high
+    - temperature_low
+    - precip_intensity_max
+    - uv_index
+    - moon_phase
+    - sunrise_time
+    - sunset_time
+    - nearest_storm_distance
+    - nearest_storm_bearing
+
 
 - platform: mqtt
   state_topic: "home/garden/temperature"

@@ -1,35 +1,91 @@
 # sensor.bordeaux_freeze_chance: {}
 ########CUSTOMIZE SENSORS########
+
+
 ####meteo####
-     sensor.meteo_temperature:
-        icon: mdi:thermometer
-        friendly_name: Outdoor
-     sensor.meteo_wind_speed:
-        icon: mdi:meteo-windy
-        friendly_name: Vent
-     sensor.meteo_weather:
-        friendly_name: Weather
-     sensor.meteo_uv:
-        friendly_name: UV
-     sensor.meteo_next_rain:
-        friendly_name: Prochaine pluie
-     sensor.meteo_freeze_chance:
-        friendly_name: Chance de gele
-     sensor.meteo_rain_chance:
-        friendly_name: Chance de pluie
-     sensor.meteo_snow_chance:
-        friendly_name: chance de neige
-     sensor.meteo_thunder_chance:
-        friendly_name: chance de tonerre
+# sensor.meteo_temperature:
+#   icon: mdi:thermometer
+#   friendly_name: Outdoor
+# sensor.meteo_wind_speed:
+#   icon: mdi:meteo-windy
+#   friendly_name: Vent
+# sensor.meteo_weather:
+#   friendly_name: Weather
+# sensor.meteo_uv:
+#   friendly_name: UV
+# sensor.meteo_next_rain:
+#   friendly_name: Prochaine pluie
+# sensor.meteo_freeze_chance:
+#   friendly_name: Chance de gele
+# sensor.meteo_rain_chance:
+#   friendly_name: Chance de pluie
+# sensor.meteo_snow_chance:
+#   friendly_name: chance de neige
+# sensor.meteo_thunder_chance:
+#   friendly_name: chance de tonerre
+
+sensor.darksky_summary:
+  friendly_name: "Cloud Coverage"
+sensor.darksky_icon:
+  friendly_name: "Day High"
+sensor.darksky_precip_type:
+  friendly_name: "Humidity"
+sensor.darksky_precip_intensity:
+  friendly_name: "Day Low"
+sensor.darksky_precip_probability:
+  friendly_name: "Pressure"
+sensor.darksky_precip_accumulation:
+  friendly_name: "Temperature"
+sensor.darksky_temperature:
+  friendly_name: "Cloud Coverage"
+sensor.darksky_apparent_temperature:
+  friendly_name: "Day High"
+sensor.darksky_dew_point:
+  friendly_name: "Humidity"
+sensor.darksky_wind_speed:
+  friendly_name: "Day Low"
+sensor.darksky_wind_gust:
+  friendly_name: "Pressure"
+sensor.darksky_wind_bearing:
+  friendly_name: "Temperature"
+sensor.darksky_cloud_cover:
+  friendly_name: "Cloud Coverage"
+sensor.darksky_humidity:
+  friendly_name: "Day High"
+sensor.darksky_pressure:
+  friendly_name: "Humidity"
+sensor.darksky_visibility:
+  friendly_name: "Day Low"
+sensor.darksky_ozone:
+  friendly_name: "Pressure"
+sensor.darksky_temperature_high:
+  friendly_name: "Temperature"
+sensor.darksky_temperature_low:
+  friendly_name: "Cloud Coverage"
+sensor.darksky_precip_intensity_max:
+  friendly_name: "Day High"
+sensor.darksky_uv_index:
+  friendly_name: "Humidity"
+sensor.darksky_moon_phase:
+  friendly_name: "Day Low"
+sensor.darksky_sunrise_time:
+  friendly_name: "Pressure"
+sensor.darksky_sunset_time:
+  friendly_name: "Temperature"
+sensor.darksky_nearest_storm_distance:
+  friendly_name: "Day High"
+sensor.darksky_nearest_storm_bearing:
+  friendly_name: "Humidity"
+
 ####ESP MQTT####
-     sensor.mqtt_cpt_temperature:
-        friendly_name: "Capteur Temperature"
-        icon: mdi:thermometer
-     sensor.mqtt_cpt_luminosite:
-        friendly_name: "Capteur Luminosite"
-        icon: mdi:brightness-7
+sensor.mqtt_cpt_temperature:
+  friendly_name: "Capteur Temperature"
+  icon: mdi:thermometer
+sensor.mqtt_cpt_luminosite:
+  friendly_name: "Capteur Luminosite"
+  icon: mdi:brightness-7
 #######CUSTOMIZE SWITCHES########
 ####RF####
-     switch.mqtt_effecteur:
-        friendly_name: Vollets
-        icon: mdi:blinds
+switch.mqtt_effecteur:
+  friendly_name: Vollets
+  icon: mdi:blinds
