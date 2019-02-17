@@ -36,43 +36,34 @@ meteo:
   view: false
   entities:
    - weather.tours
-   - sensor.meteo_temperature
-   - sensor.meteo_weather
-   - sensor.meteo_wind_speed
-   - sun.sun
-   - sensor.meteo_uv
-   - sensor.meteo_next_rain
-   - sensor.meteo_freeze_chance
-   - sensor.meteo_rain_chance
-   - sensor.meteo_snow_chance
-   - sensor.meteo_thunder_chance
+   # - sensor.meteo_temperature
+   # - sensor.meteo_weather
+   # - sensor.meteo_wind_speed
+   # - sun.sun
+   # - sensor.meteo_uv
+   # - sensor.meteo_next_rain
+   # - sensor.meteo_freeze_chance
+   # - sensor.meteo_rain_chance
+   # - sensor.meteo_snow_chance
+   # - sensor.meteo_thunder_chance
 
 darksky_group:
   name: DarkSky
   entities:
     - sensor.darksky_summary
     - sensor.darksky_icon
-    - sensor.darksky_precip_type
     - sensor.darksky_precip_intensity
     - sensor.darksky_precip_probability
-    - sensor.darksky_precip_accumulation
     - sensor.darksky_temperature
     - sensor.darksky_apparent_temperature
     - sensor.darksky_dew_point
     - sensor.darksky_wind_speed
     - sensor.darksky_wind_gust
     - sensor.darksky_wind_bearing
-    - sensor.darksky_cloud_cover
     - sensor.darksky_humidity
     - sensor.darksky_pressure
     - sensor.darksky_visibility
     - sensor.darksky_ozone
-    - sensor.darksky_temperature_high
-    - sensor.darksky_temperature_low
-    - sensor.darksky_precip_intensity_max
     - sensor.darksky_uv_index
-    - sensor.darksky_moon_phase
-    - sensor.darksky_sunrise_time
-    - sensor.darksky_sunset_time
     - sensor.darksky_nearest_storm_distance
     - sensor.darksky_nearest_storm_bearing

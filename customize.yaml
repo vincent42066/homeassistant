@@ -25,57 +25,39 @@
 #   friendly_name: chance de tonerre
 
 sensor.darksky_summary:
-  friendly_name: "Cloud Coverage"
+  friendly_name: "Résumé"
 sensor.darksky_icon:
-  friendly_name: "Day High"
-sensor.darksky_precip_type:
-  friendly_name: "Humidity"
+  friendly_name: "Icon"
 sensor.darksky_precip_intensity:
-  friendly_name: "Day Low"
+  friendly_name: "Intensité de la precipitation"
 sensor.darksky_precip_probability:
-  friendly_name: "Pressure"
-sensor.darksky_precip_accumulation:
-  friendly_name: "Temperature"
+  friendly_name: "Probabilité de précipitation"
 sensor.darksky_temperature:
-  friendly_name: "Cloud Coverage"
+  friendly_name: "Temperature"
 sensor.darksky_apparent_temperature:
-  friendly_name: "Day High"
+  friendly_name: "Temperature ressentie"
 sensor.darksky_dew_point:
-  friendly_name: "Humidity"
+  friendly_name: "Point de rosée"
 sensor.darksky_wind_speed:
-  friendly_name: "Day Low"
+  friendly_name: "Vitesse Vent"
 sensor.darksky_wind_gust:
-  friendly_name: "Pressure"
+  friendly_name: "Rafale de vent"
 sensor.darksky_wind_bearing:
-  friendly_name: "Temperature"
-sensor.darksky_cloud_cover:
-  friendly_name: "Cloud Coverage"
+  friendly_name: "Orientation du vent"
 sensor.darksky_humidity:
-  friendly_name: "Day High"
+  friendly_name: "Humidity"
 sensor.darksky_pressure:
-  friendly_name: "Humidity"
+  friendly_name: "Pression"
 sensor.darksky_visibility:
-  friendly_name: "Day Low"
+  friendly_name: "Visibilité"
 sensor.darksky_ozone:
-  friendly_name: "Pressure"
-sensor.darksky_temperature_high:
-  friendly_name: "Temperature"
-sensor.darksky_temperature_low:
-  friendly_name: "Cloud Coverage"
-sensor.darksky_precip_intensity_max:
-  friendly_name: "Day High"
+  friendly_name: "Ozone"
 sensor.darksky_uv_index:
-  friendly_name: "Humidity"
-sensor.darksky_moon_phase:
-  friendly_name: "Day Low"
-sensor.darksky_sunrise_time:
-  friendly_name: "Pressure"
-sensor.darksky_sunset_time:
-  friendly_name: "Temperature"
+  friendly_name: "Indice UV"
 sensor.darksky_nearest_storm_distance:
-  friendly_name: "Day High"
+  friendly_name: "Tempète la plus proche"
 sensor.darksky_nearest_storm_bearing:
-  friendly_name: "Humidity"
+  friendly_name: "Orientation de la tempète la plus proche"
 
 ####ESP MQTT####
 sensor.mqtt_cpt_temperature:
