@@ -67,7 +67,7 @@ weather:
 
 #MQTT
 mqtt:
-  broker: 172.20.10.11 # adresse ip raspberry pi
+  broker: 172.20.10.13 # adresse ip raspberry pi
   port: 1883 # port par défaut de mosquitto
   client_id: home-assistant-1
 # keepalive: 60
