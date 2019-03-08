@@ -10,7 +10,7 @@ def on_message(client, userdata, message):
     dictMsg['topic'] = "polytech/" + dictMsg['nom'].replace(" ", "").lower()
     print(dictMsg)
     with open("sensors.yaml", "a") as myfile:
-        myfile.write("\r\n- platform: mqtt\r\n  state_topic: " + dictMsg['topic'] + "\r\n  name: " + dictMsg['nom'] + "\r\n  value_template: '{{ value_json.unit }}'")
+        myfile.write("\r\n- platform: mqtt\r\n  state_topic: \"" + dictMsg['topic'] + "\"\r\n  name: \"" + dictMsg['nom'] + "\"\r\n  value_template: '{{ value_json.unit }}'")
         myfile.close
 
 client= paho.Client("client-001")
