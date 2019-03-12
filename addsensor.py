@@ -2,7 +2,9 @@ import time
 import paho.mqtt.client as paho
 import json
 broker="172.20.10.13"
-outfile = "ble_devices.json"
+outfile = "/home/homeassistant/.homeassistant/ble_devices.json"
+sensorFile = "/home/homeassistant/.homeassistant/sensors.yaml"
+switchFile = "/home/homeassistant/.homeassistant/switch.yaml"
 #define callback
 def on_message(client, userdata, message):
     time.sleep(1)
@@ -13,13 +15,13 @@ def on_message(client, userdata, message):
     if message.topic == "polytech/ajoutercapteur":
         dictMsg['type'] = "capteur"
         print(dictMsg)
-        with open("sensors.yaml", "a") as myfile:
+        with open(sensorFile, "a") as myfile:
             myfile.write("\r\n- platform: mqtt\r\n  state_topic: \"" + dictMsg['topic'] + "\"\r\n  name: \"" + dictMsg['nom'] + "\"\r\n  value_template: '{{ value_json.unit }}'")
             myfile.close
     elif message.topic == "polytech/ajoutereffecteur":
         dictMsg['type'] = "effecteur"
         print(dictMsg)
-        with open("switch.yaml", "a") as myfile:
+        with open(switchFile, "a") as myfile:
             myfile.write("\r\n- platform: mqtt\r\n  command_topic: \"" + dictMsg['topic'] + "\"\r\n  name: \"" + dictMsg['nom']+ "\"\r\n")
             myfile.close
     with open(outfile, 'r') as json_file:
