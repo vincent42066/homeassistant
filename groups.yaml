@@ -5,7 +5,9 @@ default_view:
    - group.effecteur
    - group.meteo
    - group.darksky_group
+#   - group.group_iframe
    # - weather
+
 
 lovelace:
   name: Lovelace
@@ -18,12 +20,12 @@ lovelace:
 
 ####Everything Else####
 #
+
 capteur:
   name: Capteur
   view: false
   entities:
    - sensor.mqtt_cpt_temperature
-   - sensor.mqtt_cpt_luminosite
 
 effecteur:
   name: Effecteur

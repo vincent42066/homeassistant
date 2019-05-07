@@ -34,15 +34,24 @@
     - nearest_storm_distance
     - nearest_storm_bearing
 
+- platform: template
+  sensors:
+    iframe:
+      value_template: iframe
+
 
 - platform: mqtt
   state_topic: "home/garden/temperature"
   name: "MQTT cpt Temperature"
-  unit_of_measurement: '°C'
-  value_template: '{{ value_json.temperature }}'
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.unit }}'
+
 
 - platform: mqtt
-  state_topic: "home/lovelace/luminosite"
-  name: "MQTT cpt Luminosite"
-  unit_of_measurement: 'lum'
-  value_template: '{{ value_json.luminosite }}'
+  state_topic: "polytech/moncapteur"
+  name: "moncapteur"
+  value_template: '{{ value_json.unit }}'
+- platform: mqtt
+  state_topic: "polytech/uncapteur"
+  name: "uncapteur"
+  value_template: '{{ value_json.unit }}'

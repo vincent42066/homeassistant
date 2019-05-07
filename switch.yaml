@@ -1,0 +1,7 @@
+- platform: mqtt
+  command_topic: "home/lovelace/volet/set"
+  name: "MQTT Effecteur"
+
+- platform: mqtt
+  command_topic: "polytech/uneffecteur"
+  name: "uneffecteur"

@@ -19,6 +19,10 @@ introduction:
 # Enables the frontend
 frontend:
 
+
+
+notify:
+
 # Enables configuration UI
 config:
 
@@ -64,10 +68,9 @@ weather:
   mode: daily
 
 
-
 #MQTT
 mqtt:
-  broker: 172.20.10.13 # adresse ip raspberry pi
+  broker: 192.168.4.1 # adresse ip raspberry pi
   port: 1883 # port par défaut de mosquitto
   client_id: home-assistant-1
 # keepalive: 60
@@ -81,10 +84,8 @@ sensor: !include sensors.yaml
 
 
 # Switch
-switch:
-  - platform: mqtt
-    command_topic: "home/lovelace/volet/set"
-    name: "MQTT Effecteur"
+switch: !include switch.yaml
+
 
 # Bluetooth tracker
 # device_tracker:
