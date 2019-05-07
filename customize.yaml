@@ -59,13 +59,11 @@ sensor.darksky_nearest_storm_distance:
 sensor.darksky_nearest_storm_bearing:
   friendly_name: "Orientation de la tempète la plus proche"
 
+
 ####ESP MQTT####
 sensor.mqtt_cpt_temperature:
   friendly_name: "Capteur Temperature"
   icon: mdi:thermometer
-sensor.mqtt_cpt_luminosite:
-  friendly_name: "Capteur Luminosite"
-  icon: mdi:brightness-7
 #######CUSTOMIZE SWITCHES########
 ####RF####
 switch.mqtt_effecteur:
